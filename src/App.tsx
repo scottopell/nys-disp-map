@@ -1,24 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AddressMap from "./Map";
+import dispData from "./nys-disp-data";
+import 'leaflet/dist/leaflet.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> NYS Licensed Dispensary Map</h1>
+      <h3> Total Dispensaries: <span>{dispData.numDispensaries}</span></h3>
+      <h3> Delivery Only Dispensaries: <span>{dispData.numDeliveryOnly}</span></h3>
+      <AddressMap locations={dispData.dispensaries}/>
     </div>
   );
 }

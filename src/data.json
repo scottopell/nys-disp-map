@@ -1,0 +1,120 @@
+{
+    "numDeliveryOnly": 3,
+    "numDispensaries": 9,
+    "dispensaries": [
+        {
+            "name": "Housing Works Cannabis, LLC",
+            "city": "New York",
+            "state": "NY",
+            "address": "750 Broadway",
+            "zipCode": "10003",
+            "deliveryOnly": false,
+            "lat": 40.7302074,
+            "lng": -73.99243200000001
+        },
+        {
+            "name": "Smacked Village",
+            "city": "New York",
+            "state": "NY",
+            "address": "144 Bleecker Street",
+            "zipCode": "10012",
+            "deliveryOnly": false,
+            "lat": 40.7280552,
+            "lng": -73.99932439999999
+        },
+        {
+            "name": "Just Breathe",
+            "city": "Binghamton",
+            "state": "NY",
+            "address": "75 Court Street",
+            "zipCode": "13901",
+            "deliveryOnly": false,
+            "lat": 42.0988598,
+            "lng": -75.9117444
+        },
+        {
+            "name": "Union Square Travel Agency",
+            "city": "New York",
+            "state": "NY",
+            "address": "62 E 13th Street",
+            "zipCode": "10003",
+            "deliveryOnly": false,
+            "lat": 40.7340955,
+            "lng": -73.9914855
+        },
+        {
+            "name": "William Jane Corporation",
+            "city": "Ithaca",
+            "state": "NY",
+            "address": "119-121 E State Street",
+            "zipCode": "14850",
+            "deliveryOnly": false,
+            "lat": 42.4393092,
+            "lng": -76.4980334
+        },
+        {
+            "name": "Good Grades, LLC",
+            "city": "Jamaica",
+            "state": "NY",
+            "address": "162-03 Jamaica Avenue",
+            "zipCode": "11432",
+            "deliveryOnly": false,
+            "lat": 40.7045481,
+            "lng": -73.797546
+        },
+        {
+            "name": "Upstate Canna Co",
+            "city": "Schenectady",
+            "state": "NY",
+            "address": "1613 Union Street",
+            "zipCode": "12309",
+            "deliveryOnly": false,
+            "lat": 42.805176,
+            "lng": -73.9048775
+        },
+        {
+            "name": "Dazed",
+            "city": "New York",
+            "state": "NY",
+            "address": "33 Union Sq. W",
+            "zipCode": "10003",
+            "deliveryOnly": false,
+            "lat": 40.73687080000001,
+            "lng": -73.9909297
+        },
+        {
+            "name": "Essential Flowers",
+            "city": "Albany",
+            "state": "NY",
+            "deliveryOnly": true,
+            "lat": 42.6525793,
+            "lng": -73.7562317
+        },
+        {
+            "name": "Gotham CAURD LLC",
+            "city": "New York",
+            "state": "NY",
+            "address": "3 E 3rd Street",
+            "zipCode": "10003",
+            "deliveryOnly": false,
+            "lat": 40.7263366,
+            "lng": -73.9912901
+        },
+        {
+            "name": "Elevate ADK",
+            "city": "Plattsburgh",
+            "state": "NY",
+            "deliveryOnly": true,
+            "lat": 44.6994873,
+            "lng": -73.4529124
+        },
+        {
+            "name": "Social Equity CAURD JV LLC",
+            "city": "Richmond Hill",
+            "state": "NY",
+            "deliveryOnly": true,
+            "lat": 40.6958108,
+            "lng": -73.8272029
+        }
+    ]
+}
