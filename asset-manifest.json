@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nys-disp-map/static/css/main.ff5ab8ff.css",
+    "main.js": "/nys-disp-map/static/js/main.d38ad2d9.js",
+    "static/js/787.755c5b8f.chunk.js": "/nys-disp-map/static/js/787.755c5b8f.chunk.js",
+    "index.html": "/nys-disp-map/index.html",
+    "main.ff5ab8ff.css.map": "/nys-disp-map/static/css/main.ff5ab8ff.css.map",
+    "main.d38ad2d9.js.map": "/nys-disp-map/static/js/main.d38ad2d9.js.map",
+    "787.755c5b8f.chunk.js.map": "/nys-disp-map/static/js/787.755c5b8f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff5ab8ff.css",
+    "static/js/main.d38ad2d9.js"
+  ]
+}
