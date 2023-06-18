@@ -1,4 +1,5 @@
 import argparse
+import datetime
 import requests
 import os
 from bs4 import BeautifulSoup
@@ -101,10 +102,19 @@ def scrape_cannabis_locations():
 
     return json_output
 
+# Function to write JSON data to a file
+def write_to_file(data, filename):
+    if os.path.exists(filename):
+        print(f"Warning: File '{filename}' already exists. Skipping write.")
+    else:
+        with open(filename, "w") as file:
+            json.dump(data, file)
+        print(f"Data written to '{filename}'.")
 
 if __name__ == '__main__':
     # Create a parser for command-line arguments
-    parser = argparse.ArgumentParser(description='Scrape cannabis locations')
+    parser = argparse.ArgumentParser(description='Scrape cannabis locations. Writes scraped data to <output> if specified. Requires google maps api key to resolve addresses to lat/lng (aka geocoding). See `.env.template` for expected env vars')
+    parser.add_argument("-o", "--output", help="Output filename. Optional. Uses current date if missing")
 
     # Parse the command-line arguments
     args = parser.parse_args()
@@ -112,5 +122,12 @@ if __name__ == '__main__':
     # Scrape and process the cannabis locations
     json_output = scrape_cannabis_locations()
 
-    # Output the result in the desired format
-    print(json.dumps(json_output, indent=4))
+    if args.output:
+        if args.output == "-":
+            print(json.dumps(json_output, indent=4))
+        else:
+            write_to_file(json_output, args.output)
+    else:
+        current_date = datetime.date.today().strftime("%B_%d_%Y").lower()
+        filename = f"{current_date}.json"
+        write_to_file(json_output, filename)
